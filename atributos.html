@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ficha de Herói de Aldren Veyr, Caçador das Sombras.">
+  <link rel="icon" type="image/jpeg" href="imagens/logo.jpg">
+  <title>Aldren Veyr — Ficha de Herói</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<section id="passo-2" class="secao">
+      <div class="container">
+
+        <div class="cabecalho-secao">
+          <span class="tag">Passo 2 de 4</span>
+          <h2>Atributos & Habilidades</h2>
+        </div>
+
+        <div class="bloco">
+          <h3>Atributos Vitais</h3>
+          <div class="caixa-atributos">
+            <div class="item-atributo">
+              <div class="linha-atributo">
+                <span>HP (Pontos de Vida)</span>
+                <span>120</span>
+              </div>
+              <div class="barra-fundo">
+                <div class="barra-cor hp" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="item-atributo">
+              <div class="linha-atributo">
+                <span>EN (Energia)</span>
+                <span>80</span>
+              </div>
+              <div class="barra-fundo">
+                <div class="barra-cor en" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <div class="item-atributo">
+              <div class="linha-atributo">
+                <span>DN (Defesa)</span>
+                <span>18</span>
+              </div>
+              <div class="barra-fundo">
+                <div class="barra-cor dn" style="width: 72%;"></div>
+              </div>
+            </div>
+
+            <div class="item-atributo">
+              <div class="linha-atributo">
+                <span>AB (Combate)</span>
+                <span>15</span>
+              </div>
+              <div class="barra-fundo">
+                <div class="barra-cor ab" style="width: 60%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bloco">
+          <h3>Habilidades & Vantagens</h3>
+          <div class="duas-colunas">
+            <article class="card">
+              <h4>Foco Operacional</h4>
+              <p>Furtividade, Arqueirismo, Sobrevivência e Investigação.</p>
+            </article>
+            <figure class="media">
+              <img src="imagens/arco aldren - Copia.png" alt="Arco de Aldren">
+            </figure>
+          </div>
+        </div>
+        <div class="bloco">
+          <h3>Experiência do Herói</h3>
+          <p>XP: <span id="valorXP">0</span>/100 </p>
+          <div class="barra-fundo"><div id="barraXP" class="barra-cor"></div></div>
+          <button id="botaoXP" class="botao" type="button">Completar missão (+20 XP)</button>
+          <p id="mensagemXP"></p>
+        </div>
+
+      </div>
+
+        <div class="centro">
+            <a href="index.html" class="botao">
+                ← Voltar ao Início</a>
+
+            <a href="arsenal.html" class="botao">
+                Avançar para Arsenal →</a>
+        </div>
+
+    </div>
+</section>
+
+<footer class="rodape">
+  <div class="container">
+    <p>Aldren Veyr · Caçador das Sombras · Nível 07</p>
+    <p><a href="index.html">Voltar ao início</a></p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

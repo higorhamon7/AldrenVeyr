@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ficha de Herói de Aldren Veyr, Caçador das Sombras.">
+  <link rel="icon" type="image/jpeg" href="imagens/logo.jpg">
+  <title>Aldren Veyr — Ficha de Herói</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<section id="passo-3" class="secao">
+      <div class="container">
+
+        <div class="cabecalho-secao">
+          <span class="tag">Passo 3 de 4</span>
+          <h2>Arsenal & Equipamentos</h2>
+        </div>
+
+        <div class="bloco">
+          <figure class="media banner-img">
+            <img src="imagens/armas aldren.png" alt="Arsenal de Aldren">
+          </figure>
+
+          <p id="contadorItens"></p>
+
+          <div id="filtrosInventario">
+            <button class="botao filtro filtro-ativo" data-tipo="todos" type="button">Todos</button>
+            <button class="botao filtro" data-tipo="arma" type="button">Armas</button>
+            <button class="botao filtro" data-tipo="acessorio" type="button">Acessórios</button>
+            <button class="botao filtro" data-tipo="equipamento" type="button">Equipamentos</button>
+          </div>
+
+          <div id="listaInventario" class="grid-cards"></div>
+        </div>
+
+        <div class="bloco">
+          <h3>Inimigo & Aliados</h3>
+          <div class="duas-colunas">
+            <figure class="media">
+              <img src="imagens/guilda aldren - Copia.png" alt="Aliados e inimigos">
+            </figure>
+            <article class="card">
+              <h4>O Arauto</h4>
+              <p>Entidade principal que comanda as forças das sombras.</p>
+              <hr class="divisor">
+              <p><strong>Aliados:</strong> Lyra, Darian e Elyon.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<div class="centro">
+  <a href="atributos.html" class="botao">← Voltar aos Atributos</a>
+  <a href="contato.html" class="botao">Avançar para Contato →</a>
+</div>
+
+
+<footer class="rodape">
+  <div class="container">
+    <p>Aldren Veyr · Caçador das Sombras · Nível 07</p>
+    <p><a href="index.html">Voltar ao início</a></p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

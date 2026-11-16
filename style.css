@@ -1,0 +1,469 @@
+:root {
+    --cor-fundo: #0a0a0c;
+    --cor-card: #13131a;
+    --cor-vermelho: #a31c1c;
+    --cor-azul: #2b59c3;
+    --cor-texto: #e0e0e0;
+    --cor-cinza: #9a9a9a;
+    --cor-borda: #22222d;
+    --fonte-titulo: 'Cinzel', serif;
+    --fonte-corpo: 'Inter', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-corpo);
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--cor-fundo);
+    border-bottom: 1px solid var(--cor-borda);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo-titulo {
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  .logo-sub {
+    font-size: 0.75rem;
+    color: var(--cor-cinza);
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  .menu a:hover {
+    color: var(--cor-vermelho);
+  }
+  
+  .secao {
+    padding: 50px 0;
+    border-bottom: 1px solid var(--cor-borda);
+  }
+  
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: var(--fonte-titulo);
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 5px 0;
+  }
+  
+  h1 span {
+    color: var(--cor-vermelho);
+  }
+  
+  .sub-titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.2rem;
+    color: var(--cor-cinza);
+  }
+  
+  .tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--cor-vermelho);
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .badge {
+    background-color: var(--cor-azul);
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+  }
+  
+  .info-nivel {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 15px 0;
+  }
+  
+  .citacao {
+    border-left: 3px solid var(--cor-vermelho);
+    padding-left: 15px;
+    margin: 15px 0;
+    font-style: italic;
+    color: var(--cor-cinza);
+  }
+  
+  .bloco {
+    margin-bottom: 40px;
+  }
+  
+  .bloco h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .duas-colunas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+  
+  .card {
+    background-color: var(--cor-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3, .card h4 {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+  }
+  
+  .media img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+  }
+  
+  .media figcaption {
+    font-size: 0.8rem;
+    color: var(--cor-cinza);
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .tabela {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--cor-card);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .tabela th, .tabela td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--cor-borda);
+    text-align: left;
+  }
+  
+  .tabela th {
+    color: var(--cor-vermelho);
+    width: 35%;
+  }
+  
+  .destaque-num {
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    color: var(--cor-azul);
+    margin: 5px 0;
+  }
+  
+  .aviso {
+    color: var(--cor-azul);
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+  
+  .cabecalho-secao {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .caixa-atributos {
+    background-color: var(--cor-card);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .linha-atributo {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .barra-fundo {
+    width: 100%;
+    height: 12px;
+    background-color: #060608;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .barra-cor {
+    height: 100%;
+    border-radius: 6px;
+  }
+  
+  .hp { background-color: var(--cor-vermelho); }
+  .en { background-color: var(--cor-azul); }
+  .dn { background-color: #6d7683; }
+  .ab { background-color: #c9a24b; }
+  
+  .grid-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .raridade {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .item-lendario { border-color: var(--cor-vermelho); }
+  .item-lendario .raridade { color: var(--cor-vermelho); }
+  
+  .item-unico { border-color: #c9a24b; }
+  .item-unico .raridade { color: #c9a24b; }
+  
+  .item-raro { border-color: var(--cor-azul); }
+  .item-raro .raridade { color: #8fb0ff; }
+  
+  .item-comum { border-color: var(--cor-borda); }
+  .item-comum .raridade { color: var(--cor-cinza); }
+  
+  .divisor {
+    border: 0;
+    height: 1px;
+    background-color: var(--cor-borda);
+    margin: 15px 0;
+  }
+  
+  .botao {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--cor-vermelho);
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .botao:hover {
+    background-color: #c42a2a;
+  }
+  
+  .botao-cheio {
+    width: 100%;
+  }
+  
+  .formulario {
+    background-color: var(--cor-card);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+  }
+  
+  .formulario h3 {
+    margin-bottom: 20px;
+  }
+  
+  .grupo-form {
+    margin-bottom: 15px;
+  }
+  
+  .grupo-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .grupo-form input,
+  .grupo-form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--cor-fundo);
+    border: 1px solid var(--cor-borda);
+    border-radius: 6px;
+    color: var(--cor-texto);
+    font-family: var(--fonte-corpo);
+  }
+  
+  .grupo-form input:focus,
+  .grupo-form textarea:focus {
+    outline: none;
+    border-color: var(--cor-azul);
+  }
+  
+  .rodape {
+    background-color: #050507;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid var(--cor-borda);
+    color: var(--cor-cinza);
+    font-size: 0.9rem;
+  }
+  
+  .rodape a {
+    color: var(--cor-vermelho);
+    text-decoration: none;
+  }
+  
+  @media (min-width: 640px) {
+    .duas-colunas {
+      grid-template-columns: 1fr 1fr;
+    }
+    .banner {
+      grid-template-columns: 1.2fr 0.8fr;
+    }
+    .grid-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .grid-cards {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+/* Menu para celulares */
+.botao-menu {
+  display: none;
+  background: transparent;
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .topo {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px 5%;
+  }
+
+  .botao-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 10px;
+  }
+
+  .menu.menu-aberto {
+    display: flex;
+  }
+}
+
+/* Historia que aparece ao clicar no botao */
+.historia-oculta {
+  display: none;
+}
+
+.historia-oculta.revelado {
+  display: block;
+}
+
+/* Barra de experiencia */
+#barraXP {
+  width: 0%;
+  max-width: 100%;
+  background-color: var(--cor-azul);
+  transition: width 0.4s ease;
+}
+
+/* Filtros do inventario */
+#filtrosInventario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.filtro-ativo {
+  border: 2px solid var(--cor-vermelho);
+  opacity: 1;
+}
+
+/* Modo alternativo da Guilda */
+body.modo-guilda {
+  background-color: var(--cor-card);
+}
+
+html {
+  scroll-behavior: smooth;
+}
